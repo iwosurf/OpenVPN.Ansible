@@ -32,7 +32,7 @@
     - { file: message.txt  , mode: 644 }
     - { file: server.conf  , mode: 644 }
     - { file: client.ovpn  , mode: 644 }
-    - { file: nc.sh        , mode: 777 }
+    - { file: create.client.config.sh        , mode: 777 }
     - { file: up.sh        , mode: 755 }
     - { file: down.sh      , mode: 755 }
   tags:
@@ -107,4 +107,4 @@
 #create openvpn client certificate
 - name: Execute the script
   become: yes
-  command: /etc/openvpn/openvpn-ca/nc.sh ./
+  command: /etc/openvpn/openvpn-ca/create.client.config.sh ./
