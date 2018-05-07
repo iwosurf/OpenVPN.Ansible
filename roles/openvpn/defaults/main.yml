@@ -1,0 +1,35 @@
+---
+
+# Configure CA Variables
+
+key_country: "DE"
+key_province: "NRW"
+key_city: "Cologne"
+key_org: "it"
+key_email: "it@hivemindtechnologies.com"
+key_ou: "it"
+
+# Openvpn key server name
+
+key_name: "server"
+
+# Openvpn key client name
+
+openvpn_key_name: alpha
+
+# source certificate folder
+
+openvpn_ca_folder: /etc/openvpn/openvpn-ca/
+openvpn_keys: /etc/openvpn/openvpn-ca/keys
+
+# Openvpn server.conf 
+
+openvpn_network_addr: 10.8.0.0
+openvpn_network_mask: 255.255.255.0
+
+openvpn_port: 1194
+openvpn_proto: udp
+
+openvpn_networks: []
+openvpn_push_dns: []
+openvpn_domains:  []
