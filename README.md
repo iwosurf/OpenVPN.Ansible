@@ -41,3 +41,9 @@ openvpn_networks: []
 openvpn_push_dns: []
 openvpn_domains:  []
 ```
+## Create new client OpenVPN key
+
+You can create a new client with certificates.
+Go to folder /etc/openvpn/openvpn-ca/
+Go to the file create.client.config.sh and change all entries "alpha" to client name you want example "beta".
+With the command ""./ create.client.config.sh" execute the script
