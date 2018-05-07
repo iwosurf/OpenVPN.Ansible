@@ -1,4 +1,4 @@
-Ansible OpenVpn Server
+###Ansible OpenVpn Server
 
 The role openvpn.yml includes
 - configure the openvpn server
@@ -11,7 +11,7 @@ Tested OS
 Role Variables
 - change Variables in folder /roles/openvpn/defaults/main.yml
 
-Configure the CA Variables
+###Configure the CA Variables
 ```
 key_country: "DE"
 key_province: "NRW"
@@ -20,16 +20,16 @@ key_org: "it"
 key_email: "it@hivemindtechnologies.com"
 key_ou: "it"
 ```
-Key name OpenVpn Server
+###Key name OpenVpn server
 ```
 key_name: "server"
 ```
-Key name OpenVpn client
+###Key name OpenVpn client
 ```
 openvpn_key_name: alpha
 ```
 
-OpenVpn Network configuration
+###OpenVpn Network configuration
 ```
 openvpn_network_addr: 10.8.0.0
 openvpn_network_mask: 255.255.255.0
