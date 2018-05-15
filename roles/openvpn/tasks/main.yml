@@ -1,5 +1,5 @@
 #OpenVPNServer and easy-rsa package install
-- name: install openvpn and easy-rsa
+- name: install openvpn easy-rsa zip
   apt:
     name: "{{ item }}"
     install-recommends: no
@@ -7,6 +7,7 @@
   with_items:
     - openvpn
     - easy-rsa
+    - zip
 
 #copy easy-rsa template directory into our openvpn directory
 - name: create easy-rsa dir
@@ -35,6 +36,7 @@
     - { file: create.client.config.sh        , mode: 777 }
     - { file: up.sh        , mode: 755 }
     - { file: down.sh      , mode: 755 }
+    - { file: create.clientkey.sh , mode: 755}
   tags:
     - vpn
 

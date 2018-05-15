@@ -22,7 +22,7 @@ openvpn_key_name: alpha
 openvpn_ca_folder: /etc/openvpn/openvpn-ca/
 openvpn_keys: /etc/openvpn/openvpn-ca/keys
 
-# Openvpn server.conf 
+# Openvpn server.conf
 
 openvpn_network_addr: 10.8.0.0
 openvpn_network_mask: 255.255.255.0
