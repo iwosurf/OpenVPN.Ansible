@@ -45,6 +45,6 @@ openvpn_domains:  []
 
 You can create a new client certificates.  
 Go to folder /etc/openvpn/openvpn-ca/    
-With the command ./ create.clientkey.sh" execute the script
-Insert keyname
+With the command ./ create.clientkey.sh" execute the script  
+Insert keyname  
 In the folder /etc/keyname you find the .zip folder with the keys   
